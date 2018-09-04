@@ -1,3 +1,4 @@
+//package ua.org.game;
 
 import javax.swing.*;
 import sokoban.GameFrame;

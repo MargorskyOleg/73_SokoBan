@@ -9,6 +9,7 @@ import java.util.List;
 import sokoban.Mover;
 
 public class GameFrame extends JComponent implements Runnable {
+  public Mover sbMover = new Mover(0, 0);
 
 //     int x = Main.WIDTH / 2;
 //     int y = Main.HEIGHT / 2;
@@ -179,6 +180,7 @@ public class GameFrame extends JComponent implements Runnable {
 
         if (e.getKeyCode() == KeyEvent.VK_UP) {
             pathY=pathY-30;
+            sbMover.stepUp();
 //            if (yMaze+maze.length == 0 && xMaze+maze.length != 1 || yMaze+maze.length != 1 && xMaze+maze.length == 0);
 
 //            if(!maze.getMap(xMaze.getTileX(),yMaze,getTileY() - 30 ).equals("1"))
@@ -190,16 +192,20 @@ public class GameFrame extends JComponent implements Runnable {
         }
         if (e.getKeyCode() == KeyEvent.VK_DOWN) {
             pathY=pathY+30;
+            sbMover.stepDown();
 //            yMaze=yMaze+30;
 //            checkOOB();
         }
         if (e.getKeyCode() == KeyEvent.VK_LEFT) {
             pathX=pathX-30;
+
+              sbMover.stepLeft();
 //            xMaze=xMaze-30;
 //            checkOOB();
         }
         if (e.getKeyCode() == KeyEvent.VK_RIGHT) {
             pathX=pathX+30;
+            sbMover.stepRight();
 //            xMaze=xMaze+30;
 //            checkOOB();
         }
