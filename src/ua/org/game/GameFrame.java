@@ -4,8 +4,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
-import java.util.ArrayList;
-import java.util.List;
 
 
 public class GameFrame extends JComponent implements Runnable {
@@ -149,14 +147,6 @@ public class GameFrame extends JComponent implements Runnable {
 
         if (e.getKeyCode() == KeyEvent.VK_UP) {
             sbMover.stepUp();
-//            if (yMaze+maze.length == 0 && xMaze+maze.length != 1 || yMaze+maze.length != 1 && xMaze+maze.length == 0);
-
-//            if(!maze.getMap(xMaze.getTileX(),yMaze,getTileY() - 30 ).equals("1"))
-
-//            if(!maze.getMap(this.getTileX(),this,getTileY() -30 ).equals("1"))
-//            if(!m.getMap(p.getTitleX(),p,getTileY() ).equals("w"))
-//            yMaze=yMaze-30;
-//            checkOOB();
         }
         if (e.getKeyCode() == KeyEvent.VK_DOWN) {
             sbMover.stepDown();
