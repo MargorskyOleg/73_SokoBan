@@ -1,7 +1,6 @@
+package ua.org.game;
 
 import javax.swing.*;
-import sokoban.GameFrame;
-import sokoban.Mover;
 
 public class Main {
     private static final int WIDTH = 410;

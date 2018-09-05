@@ -1,5 +1,5 @@
 //package ua.org.game;
-
+/*
 import javax.swing.*;
 import sokoban.GameFrame;
 import sokoban.Mover;
@@ -19,3 +19,4 @@ public class Main {
         frame.addKeyListener(gameFrame.getController());
     }
 }
+*/
